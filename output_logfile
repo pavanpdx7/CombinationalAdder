@@ -1,0 +1,252 @@
+[2025-02-13 10:42:40 UTC] xrun -Q -unbuffered '-timescale' '1ns/1ns' '-sysv' '-access' '+rw' -uvmnocdnsextra -uvmhome $UVM_HOME $UVM_HOME/src/uvm_macros.svh design.sv testbench.sv  
+TOOL:	xrun	23.09-s001: Started on Feb 13, 2025 at 05:42:40 EST
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+	Top level design units:
+		uvm_pkg
+		adder_pkg
+		$unit_0x67f934e9
+		top
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> source /xcelium23.09/tools//methodology/UVM/CDNS-1.2/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO /xcelium23.09/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (23.09-s001)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_bits_to_string.str" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_bits_to_string.str' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+UVM_INFO @ 0: reporter [RNTST] Running test adder_test...
+UVM_INFO sequence.sv(15) @ 0: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 0: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=11 b=2
+UVM_INFO driver.sv(25) @ 0: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=11 b=2
+UVM_INFO monitor.sv(27) @ 15000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=11 b=2
+UVM_INFO scoreboard.sv(19) @ 15000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=11 b=2
+UVM_INFO scoreboard.sv(21) @ 15000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=11 b=2 actual_y=13 expected_y=13
+UVM_INFO scoreboard.sv(22) @ 15000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 15000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 15000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=8 b=15
+UVM_INFO driver.sv(25) @ 15000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=8 b=15
+UVM_INFO monitor.sv(27) @ 30000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=8 b=15
+UVM_INFO scoreboard.sv(19) @ 30000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=8 b=15
+UVM_INFO scoreboard.sv(21) @ 30000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=8 b=15 actual_y=23 expected_y=7
+UVM_INFO scoreboard.sv(22) @ 30000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 30000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 30000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=3 b=15
+UVM_INFO driver.sv(25) @ 30000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=3 b=15
+UVM_INFO monitor.sv(27) @ 45000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=3 b=15
+UVM_INFO scoreboard.sv(19) @ 45000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=3 b=15
+UVM_INFO scoreboard.sv(21) @ 45000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=3 b=15 actual_y=18 expected_y=2
+UVM_INFO scoreboard.sv(22) @ 45000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 45000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 45000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=11 b=13
+UVM_INFO driver.sv(25) @ 45000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=11 b=13
+UVM_INFO monitor.sv(27) @ 60000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=11 b=13
+UVM_INFO scoreboard.sv(19) @ 60000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=11 b=13
+UVM_INFO scoreboard.sv(21) @ 60000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=11 b=13 actual_y=24 expected_y=8
+UVM_INFO scoreboard.sv(22) @ 60000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 60000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 60000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=0 b=7
+UVM_INFO driver.sv(25) @ 60000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=0 b=7
+UVM_INFO monitor.sv(27) @ 75000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=0 b=7
+UVM_INFO scoreboard.sv(19) @ 75000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=0 b=7
+UVM_INFO scoreboard.sv(21) @ 75000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=0 b=7 actual_y=7 expected_y=7
+UVM_INFO scoreboard.sv(22) @ 75000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 75000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 75000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=3 b=4
+UVM_INFO driver.sv(25) @ 75000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=3 b=4
+UVM_INFO monitor.sv(27) @ 90000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=3 b=4
+UVM_INFO scoreboard.sv(19) @ 90000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=3 b=4
+UVM_INFO scoreboard.sv(25) @ 90000: uvm_test_top.e.scb [SCOREBOARD] ***MISMATCHED***a=3 b=4 actual_y=x expected_y=7
+UVM_INFO sequence.sv(15) @ 90000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 90000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=2 b=2
+UVM_INFO driver.sv(25) @ 90000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=2 b=2
+UVM_INFO monitor.sv(27) @ 105000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=2 b=2
+UVM_INFO scoreboard.sv(19) @ 105000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=2 b=2
+UVM_INFO scoreboard.sv(21) @ 105000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=2 b=2 actual_y=4 expected_y=4
+UVM_INFO scoreboard.sv(22) @ 105000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 105000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 105000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=15 b=9
+UVM_INFO driver.sv(25) @ 105000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=15 b=9
+UVM_INFO monitor.sv(27) @ 120000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=15 b=9
+UVM_INFO scoreboard.sv(19) @ 120000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=15 b=9
+UVM_INFO scoreboard.sv(21) @ 120000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=15 b=9 actual_y=24 expected_y=8
+UVM_INFO scoreboard.sv(22) @ 120000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 120000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 120000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=10 b=7
+UVM_INFO driver.sv(25) @ 120000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=10 b=7
+UVM_INFO monitor.sv(27) @ 135000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=10 b=7
+UVM_INFO scoreboard.sv(19) @ 135000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=10 b=7
+UVM_INFO scoreboard.sv(21) @ 135000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=10 b=7 actual_y=17 expected_y=1
+UVM_INFO scoreboard.sv(22) @ 135000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 135000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 135000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=2 b=15
+UVM_INFO driver.sv(25) @ 135000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=2 b=15
+UVM_INFO monitor.sv(27) @ 150000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=2 b=15
+UVM_INFO scoreboard.sv(19) @ 150000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=2 b=15
+UVM_INFO scoreboard.sv(25) @ 150000: uvm_test_top.e.scb [SCOREBOARD] ***MISMATCHED***a=2 b=15 actual_y=x expected_y=1
+UVM_INFO sequence.sv(15) @ 150000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 150000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=7 b=0
+UVM_INFO driver.sv(25) @ 150000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=7 b=0
+UVM_INFO monitor.sv(27) @ 165000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=7 b=0
+UVM_INFO scoreboard.sv(19) @ 165000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=7 b=0
+UVM_INFO scoreboard.sv(21) @ 165000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=7 b=0 actual_y=7 expected_y=7
+UVM_INFO scoreboard.sv(22) @ 165000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 165000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 165000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=9 b=14
+UVM_INFO driver.sv(25) @ 165000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=9 b=14
+UVM_INFO monitor.sv(27) @ 180000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=9 b=14
+UVM_INFO scoreboard.sv(19) @ 180000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=9 b=14
+UVM_INFO scoreboard.sv(21) @ 180000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=9 b=14 actual_y=23 expected_y=7
+UVM_INFO scoreboard.sv(22) @ 180000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 180000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 180000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=8 b=6
+UVM_INFO driver.sv(25) @ 180000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=8 b=6
+UVM_INFO monitor.sv(27) @ 195000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=8 b=6
+UVM_INFO scoreboard.sv(19) @ 195000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=8 b=6
+UVM_INFO scoreboard.sv(21) @ 195000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=8 b=6 actual_y=14 expected_y=14
+UVM_INFO scoreboard.sv(22) @ 195000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 195000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 195000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=5 b=8
+UVM_INFO driver.sv(25) @ 195000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=5 b=8
+UVM_INFO monitor.sv(27) @ 210000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=5 b=8
+UVM_INFO scoreboard.sv(19) @ 210000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=5 b=8
+UVM_INFO scoreboard.sv(21) @ 210000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=5 b=8 actual_y=13 expected_y=13
+UVM_INFO scoreboard.sv(22) @ 210000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 210000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 210000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=0 b=14
+UVM_INFO driver.sv(25) @ 210000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=0 b=14
+UVM_INFO monitor.sv(27) @ 225000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=0 b=14
+UVM_INFO scoreboard.sv(19) @ 225000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=0 b=14
+UVM_INFO scoreboard.sv(21) @ 225000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=0 b=14 actual_y=14 expected_y=14
+UVM_INFO scoreboard.sv(22) @ 225000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 225000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 225000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=7 b=6
+UVM_INFO driver.sv(25) @ 225000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=7 b=6
+UVM_INFO monitor.sv(27) @ 240000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=7 b=6
+UVM_INFO scoreboard.sv(19) @ 240000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=7 b=6
+UVM_INFO scoreboard.sv(21) @ 240000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=7 b=6 actual_y=13 expected_y=13
+UVM_INFO scoreboard.sv(22) @ 240000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 240000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 240000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=12 b=2
+UVM_INFO driver.sv(25) @ 240000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=12 b=2
+UVM_INFO monitor.sv(27) @ 255000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=12 b=2
+UVM_INFO scoreboard.sv(19) @ 255000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=12 b=2
+UVM_INFO scoreboard.sv(21) @ 255000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=12 b=2 actual_y=14 expected_y=14
+UVM_INFO scoreboard.sv(22) @ 255000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 255000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 255000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=14 b=11
+UVM_INFO driver.sv(25) @ 255000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=14 b=11
+UVM_INFO monitor.sv(27) @ 270000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=14 b=11
+UVM_INFO scoreboard.sv(19) @ 270000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=14 b=11
+UVM_INFO scoreboard.sv(21) @ 270000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=14 b=11 actual_y=25 expected_y=9
+UVM_INFO scoreboard.sv(22) @ 270000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 270000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 270000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=13 b=13
+UVM_INFO driver.sv(25) @ 270000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=13 b=13
+UVM_INFO monitor.sv(27) @ 285000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=13 b=13
+UVM_INFO scoreboard.sv(19) @ 285000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=13 b=13
+UVM_INFO scoreboard.sv(21) @ 285000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=13 b=13 actual_y=26 expected_y=10
+UVM_INFO scoreboard.sv(22) @ 285000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 285000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 285000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=10 b=9
+UVM_INFO driver.sv(25) @ 285000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=10 b=9
+UVM_INFO monitor.sv(27) @ 300000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=10 b=9
+UVM_INFO scoreboard.sv(19) @ 300000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=10 b=9
+UVM_INFO scoreboard.sv(21) @ 300000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=10 b=9 actual_y=19 expected_y=3
+UVM_INFO scoreboard.sv(22) @ 300000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 300000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 300000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=4 b=15
+UVM_INFO driver.sv(25) @ 300000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=4 b=15
+UVM_INFO monitor.sv(27) @ 315000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=4 b=15
+UVM_INFO scoreboard.sv(19) @ 315000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=4 b=15
+UVM_INFO scoreboard.sv(25) @ 315000: uvm_test_top.e.scb [SCOREBOARD] ***MISMATCHED***a=4 b=15 actual_y=x expected_y=3
+UVM_INFO sequence.sv(15) @ 315000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 315000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=11 b=15
+UVM_INFO driver.sv(25) @ 315000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=11 b=15
+UVM_INFO monitor.sv(27) @ 330000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=11 b=15
+UVM_INFO scoreboard.sv(19) @ 330000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=11 b=15
+UVM_INFO scoreboard.sv(21) @ 330000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=11 b=15 actual_y=26 expected_y=10
+UVM_INFO scoreboard.sv(22) @ 330000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 330000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 330000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=0 b=6
+UVM_INFO driver.sv(25) @ 330000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=0 b=6
+UVM_INFO monitor.sv(27) @ 345000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=0 b=6
+UVM_INFO scoreboard.sv(19) @ 345000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=0 b=6
+UVM_INFO scoreboard.sv(21) @ 345000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=0 b=6 actual_y=6 expected_y=6
+UVM_INFO scoreboard.sv(22) @ 345000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 345000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 345000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=2 b=9
+UVM_INFO driver.sv(25) @ 345000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=2 b=9
+UVM_INFO monitor.sv(27) @ 360000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=2 b=9
+UVM_INFO scoreboard.sv(19) @ 360000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=2 b=9
+UVM_INFO scoreboard.sv(21) @ 360000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=2 b=9 actual_y=11 expected_y=11
+UVM_INFO scoreboard.sv(22) @ 360000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 360000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 360000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=1 b=9
+UVM_INFO driver.sv(25) @ 360000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=1 b=9
+UVM_INFO monitor.sv(27) @ 375000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=1 b=9
+UVM_INFO scoreboard.sv(19) @ 375000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=1 b=9
+UVM_INFO scoreboard.sv(21) @ 375000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=1 b=9 actual_y=10 expected_y=10
+UVM_INFO scoreboard.sv(22) @ 375000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 375000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 375000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=13 b=15
+UVM_INFO driver.sv(25) @ 375000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=13 b=15
+UVM_INFO monitor.sv(27) @ 390000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=13 b=15
+UVM_INFO scoreboard.sv(19) @ 390000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=13 b=15
+UVM_INFO scoreboard.sv(21) @ 390000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=13 b=15 actual_y=28 expected_y=12
+UVM_INFO scoreboard.sv(22) @ 390000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 390000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 390000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=7 b=0
+UVM_INFO driver.sv(25) @ 390000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=7 b=0
+UVM_INFO monitor.sv(27) @ 405000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=7 b=0
+UVM_INFO scoreboard.sv(19) @ 405000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=7 b=0
+UVM_INFO scoreboard.sv(21) @ 405000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=7 b=0 actual_y=7 expected_y=7
+UVM_INFO scoreboard.sv(22) @ 405000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 405000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 405000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=14 b=13
+UVM_INFO driver.sv(25) @ 405000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=14 b=13
+UVM_INFO monitor.sv(27) @ 420000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=14 b=13
+UVM_INFO scoreboard.sv(19) @ 420000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=14 b=13
+UVM_INFO scoreboard.sv(21) @ 420000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=14 b=13 actual_y=27 expected_y=11
+UVM_INFO scoreboard.sv(22) @ 420000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 420000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 420000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=3 b=14
+UVM_INFO driver.sv(25) @ 420000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=3 b=14
+UVM_INFO monitor.sv(27) @ 435000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=3 b=14
+UVM_INFO scoreboard.sv(19) @ 435000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=3 b=14
+UVM_INFO scoreboard.sv(21) @ 435000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=3 b=14 actual_y=17 expected_y=1
+UVM_INFO scoreboard.sv(22) @ 435000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(15) @ 435000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] ________________________________________________________________________________
+UVM_INFO sequence.sv(16) @ 435000: uvm_test_top.e.agnt.seqr@@seq [SEQUENCE] Data sent to the Driver from Sequence a=4 b=15
+UVM_INFO driver.sv(25) @ 435000: uvm_test_top.e.agnt.drvr [DRIVER] Driving to DUT a=4 b=15
+UVM_INFO monitor.sv(27) @ 450000: uvm_test_top.e.agnt.mon [MONITOR] Sending stimulus to Scoreboard a=4 b=15
+UVM_INFO scoreboard.sv(19) @ 450000: uvm_test_top.e.scb [SCOREBOARD] ---RECEIVED DATA FROM MONITOR TO SCOREBOARD---a=4 b=15
+UVM_INFO scoreboard.sv(21) @ 450000: uvm_test_top.e.scb [SCOREBOARD] ---MATCHED---a=4 b=15 actual_y=19 expected_y=3
+UVM_INFO scoreboard.sv(22) @ 450000: uvm_test_top.e.scb [SEQUENCE] ________________________________________________________________________________
+Simulation complete via $finish(1) at time 500 NS + 0
+./testbench.sv:27   $finish;  
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Feb 13, 2025 at 05:42:48 EST  (total: 00:00:08)
+Done
